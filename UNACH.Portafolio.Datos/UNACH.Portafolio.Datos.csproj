@@ -65,22 +65,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Area.cs" />
-    <Compile Include="ModeloPortafolioUnach.cs" />
+    <Compile Include="Area.cs">
+      <DependentUpon>PortafolioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortafolioModelo.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PortafolioModelo.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortafolioModelo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PortafolioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortafolioModelo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PortafolioModelo.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proyecto.cs">
+      <DependentUpon>PortafolioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Responsable.cs">
+      <DependentUpon>PortafolioModelo.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="prueba.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="PortafolioModelo.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PortafolioModelo.edmx</DependentUpon>
+      <LastGenOutput>PortafolioModelo.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="prueba_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>prueba.mdf</DependentUpon>
+    <Content Include="PortafolioModelo.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PortafolioModelo.edmx</DependentUpon>
+      <LastGenOutput>PortafolioModelo.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <EntityDeploy Include="PortafolioModelo.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PortafolioModelo.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="PortafolioModelo.edmx.diagram">
+      <DependentUpon>PortafolioModelo.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
@@ -93,6 +125,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

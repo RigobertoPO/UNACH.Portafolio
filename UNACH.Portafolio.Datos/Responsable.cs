@@ -12,10 +12,11 @@ namespace UNACH.Portafolio.Datos
     using System;
     using System.Collections.Generic;
     
-    public partial class Area
+    public partial class Responsable
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public Nullable<System.DateTime> Fecharegistro { get; set; }
+        public string Correo { get; set; }
+        public string Telefono { get; set; }
     }
 }
