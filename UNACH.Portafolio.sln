@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UNACH.Portafolio.Datos", "U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UNACH.Portafolio.Logica", "UNACH.Portafolio.Logica\UNACH.Portafolio.Logica.csproj", "{839E924A-8970-4FA3-AB11-9AEC7BFE5470}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UNACH.Portafolio.Interfaz", "UNACH.Portafolio.Interfaz\UNACH.Portafolio.Interfaz.csproj", "{4F16F541-E4D8-4EF4-9BC0-BAA874CA4BEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{839E924A-8970-4FA3-AB11-9AEC7BFE5470}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{839E924A-8970-4FA3-AB11-9AEC7BFE5470}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{839E924A-8970-4FA3-AB11-9AEC7BFE5470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F16F541-E4D8-4EF4-9BC0-BAA874CA4BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F16F541-E4D8-4EF4-9BC0-BAA874CA4BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F16F541-E4D8-4EF4-9BC0-BAA874CA4BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F16F541-E4D8-4EF4-9BC0-BAA874CA4BEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5D473651-74EA-44C0-A142-13661812924F} = {96C019EA-4F9B-4C90-B739-9072AEC44CD6}
 		{839E924A-8970-4FA3-AB11-9AEC7BFE5470} = {790E37B7-0B3B-43C5-8969-D5BFA9BD061F}
+		{4F16F541-E4D8-4EF4-9BC0-BAA874CA4BEE} = {15957A65-9123-4322-9583-A5773F8A7455}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {13BA19BD-7C1E-435B-B68F-15122EC67E05}
