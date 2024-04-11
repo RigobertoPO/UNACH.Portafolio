@@ -27,9 +27,29 @@ namespace UNACH.Portafolio.Interfaz
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            UNACH.Portafolio.Logica.AreasMetodos area =
-                new Logica.AreasMetodos();
-            dtgAreas.ItemsSource = area.ObtenerAreas();
+            //UNACH.Portafolio.Logica.AreasMetodos area =
+            //    new Logica.AreasMetodos();
+            //dtgAreas.ItemsSource = area.ObtenerAreas();
+        }
+
+        private void btnAreas_Click(object sender, RoutedEventArgs e)
+        {
+            Areas.UCAreas _areas = new Areas.UCAreas();
+            EspacioTrabajo.Children.Clear();
+            EspacioTrabajo.Children.Add(_areas);
+                
+        }
+
+        private void btnSalir_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnUsuarios_Click(object sender, RoutedEventArgs e)
+        {
+            Usuarios.UCUsuarios _usuarios = new Usuarios.UCUsuarios();
+            EspacioTrabajo.Children.Clear();
+            EspacioTrabajo.Children.Add(_usuarios);
         }
     }
 }
