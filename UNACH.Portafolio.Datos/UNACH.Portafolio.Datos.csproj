@@ -93,6 +93,9 @@
     <Compile Include="Responsable.cs">
       <DependentUpon>PortafolioModelo.tt</DependentUpon>
     </Compile>
+    <Compile Include="Usuario.cs">
+      <DependentUpon>PortafolioModelo.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="PortafolioModelo.Context.tt">

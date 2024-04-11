@@ -6,8 +6,9 @@
     <edmx:Diagrams>
       <Diagram DiagramId="ff4919620b674a7dac3a0bbc37b9ab99" Name="Diagram1">
         <EntityTypeShape EntityType="PortafolioModel.Area" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="PortafolioModel.Proyecto" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="PortafolioModel.Responsable" Width="1.5" PointX="4.875" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortafolioModel.Proyecto" Width="1.5" PointX="2.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortafolioModel.Responsable" Width="1.5" PointX="4.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortafolioModel.Usuario" Width="1.5" PointX="0.75" PointY="2.625" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

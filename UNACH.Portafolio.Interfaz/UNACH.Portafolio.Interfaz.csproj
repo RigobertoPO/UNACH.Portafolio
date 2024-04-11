@@ -68,6 +68,9 @@
     <Compile Include="Usuarios\UCUsuarios.xaml.cs">
       <DependentUpon>UCUsuarios.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Usuarios\WLogin.xaml.cs">
+      <DependentUpon>WLogin.xaml</DependentUpon>
+    </Compile>
     <Page Include="Areas\UCAreas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -87,7 +90,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Style.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Usuarios\UCUsuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Usuarios\WLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

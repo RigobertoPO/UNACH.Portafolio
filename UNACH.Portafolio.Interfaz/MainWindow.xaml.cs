@@ -27,6 +27,8 @@ namespace UNACH.Portafolio.Interfaz
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            Usuarios.WLogin login = new Usuarios.WLogin();
+            login.ShowDialog();
             //UNACH.Portafolio.Logica.AreasMetodos area =
             //    new Logica.AreasMetodos();
             //dtgAreas.ItemsSource = area.ObtenerAreas();

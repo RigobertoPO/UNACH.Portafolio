@@ -28,5 +28,6 @@ namespace UNACH.Portafolio.Datos
         public virtual DbSet<Area> Areas { get; set; }
         public virtual DbSet<Proyecto> Proyectos { get; set; }
         public virtual DbSet<Responsable> Responsables { get; set; }
+        public virtual DbSet<Usuario> Usuarios { get; set; }
     }
 }

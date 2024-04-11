@@ -1,0 +1,40 @@
+﻿<Window x:Class="UNACH.Portafolio.Interfaz.Usuarios.WLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UNACH.Portafolio.Interfaz.Usuarios"
+        mc:Ignorable="d"
+        Title="WLogin" Height="400" Width="400">
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource ColorFondo}"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Iniciar sesion"
+                   FontSize="25" HorizontalAlignment="Center"
+                   VerticalAlignment="Center">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{DynamicResource ColorMenu}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock Grid.Row="1" Text="Usuario"/>
+        <TextBox Grid.Row="2" x:Name="txtUsuario"
+                 Margin="10,2,10,2"/>
+        <TextBlock Grid.Row="3" Text="Password"/>
+        <PasswordBox Grid.Row="4" x:Name="pwbPassword"
+                     Margin="10,2,10,2"/>
+        <Button Grid.Row="5" Content="Entrar"
+                x:Name="btnEntrar" Height="50"
+                Width="140" Cursor="Hand" 
+                Click="btnEntrar_Click"/>
+
+    </Grid>
+</Window>

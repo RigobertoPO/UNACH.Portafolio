@@ -11,7 +11,10 @@
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="0" Background="Gray">
+        <Grid Grid.Column="0">
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource ColorMenu}"/>
+            </Grid.Background>
             <StackPanel>
                 <Button x:Name="btnAreas" Content="Areas"
                         Click="btnAreas_Click" Height="60"/>
@@ -35,7 +38,11 @@
             <Grid Grid.Row="1" x:Name="EspacioTrabajo">
                 <!--<DataGrid x:Name="dtgAreas" Margin="25" />-->
             </Grid>
-            <Grid Grid.Row="2" Background="BlueViolet"></Grid>
+            <Grid Grid.Row="2">
+                <Grid.Background>
+                    <SolidColorBrush Color="{DynamicResource ColorBarra}"/>
+                </Grid.Background>
+            </Grid>
         </Grid>
     </Grid>
 </Window>
